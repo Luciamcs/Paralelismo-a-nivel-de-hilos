@@ -3,7 +3,7 @@
 Este repositorio contiene el desarrollo de la Práctica 4 de la asignatura Computación de Alto Rendimiento del Grado en Ingeniería en Inteligencia Artificial (Universidad de Alicante).
 
 
-Descripción
+## Descripción
 
 El objetivo de esta práctica es aplicar técnicas de paralelización a nivel de hilos utilizando:
 

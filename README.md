@@ -7,8 +7,8 @@ Este repositorio contiene el desarrollo de la Práctica 4 de la asignatura Compu
 
 El objetivo de esta práctica es aplicar técnicas de paralelización a nivel de hilos utilizando:
 
-. OpenMP (paralelismo de datos)
-. std::async en C++ (paralelismo funcional/asíncrono)
+-  OpenMP (paralelismo de datos)
+- std::async en C++ (paralelismo funcional/asíncrono)
 
 Todo ello se implementa sobre un problema real: el análisis forense de manipulación de imágenes digitales, donde se detectan posibles alteraciones en imágenes mediante diferentes técnicas.
 

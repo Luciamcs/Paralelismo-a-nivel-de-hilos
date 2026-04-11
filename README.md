@@ -12,4 +12,4 @@ El objetivo de esta práctica es aplicar técnicas de paralelización a nivel de
 
 Todo ello se implementa sobre un problema real: el análisis forense de manipulación de imágenes digitales, donde se detectan posibles alteraciones en imágenes mediante diferentes técnicas.
 
-Según el enunciado, el sistema se ejecuta en una arquitectura de memoria compartida, donde todos los hilos acceden a la misma memoria
+El sistema se ejecutará en una arquitectura de memoria compartida, donde todos los hilos acceden a la misma memoria

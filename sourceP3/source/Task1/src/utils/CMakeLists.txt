@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.15)
+include_directories(${PNG_INCLUDE_DIR})
+include_directories(${JPEG_INCLUDE_DIR})
+add_library(utils image.h image.cc dct.h dct.cc)
+target_link_libraries(utils PNG::PNG JPEG::JPEG)

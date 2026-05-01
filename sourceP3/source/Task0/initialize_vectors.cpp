@@ -20,6 +20,7 @@ int main() {
     start = std::chrono::high_resolution_clock::now();
 
     std::vector<float> v2(N);
+    #pragma omp parallel for   //COMANDO PARA PARALELIZAR EL BUCLE
     for (int i = 0; i < N; i++)
         v2[i] = i;
     end = std::chrono::high_resolution_clock::now();

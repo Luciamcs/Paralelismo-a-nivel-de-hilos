@@ -13,8 +13,8 @@ int main(){
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    std::future<int> task1 = std::async(std::launch::async, task, 1, 2000);
-    std::future<int> task2 = std::async(std::launch::async, task, 2, 3000);
+    std::future<int> task1 = std::async(std::launch::deferred, task, 1, 2000);
+    std::future<int> task2 = std::async(std::launch::deferred, task, 2, 3000);
 
     task1.wait();
     int taskId = task2.get();

@@ -39,3 +39,35 @@
 
 # debug information files
 *.dwo
+
+# Build folders
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Executables without extension
+async_functions
+initialize_vectors
+suma_vectores_float
+detect
+dct
+
+# Backup and temporary files
+*.bak
+*.tmp
+*~
+.DS_Store
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar

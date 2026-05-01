@@ -1,7 +1,9 @@
 #include<omp.h>
-#define N 1000
-#define CHUNKSIZE 100
 #include <iostream>
+
+#define N 100000
+#define CHUNKSIZE 100
+
 
 int main(int argc, char *argv[]) {
     int i, chunk;
@@ -11,6 +13,8 @@ int main(int argc, char *argv[]) {
         a[i] = b[i] = i * 1.0;
     chunk = CHUNKSIZE;
 
+    double start = omp_get_wtime();
+
     #pragma omp parallel shared(a,b,c,chunk) private(i)
     {
         #pragma omp for schedule(static, chunk) nowait
@@ -18,7 +22,10 @@ int main(int argc, char *argv[]) {
             c[i] = a[i] + b[i];
     }
 
-    std::cout << "Suma de vectores completada\n";
+    double end = omp_get_wtime();
+
+    std::cout << "Suma de vectores completada" << std::endl;
+    std::cout << "Tiempo de ejecucion: " << end - start << " segundos" << std::endl;
 
     return 0;
 }
